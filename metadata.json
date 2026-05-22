@@ -1,0 +1,6 @@
+{
+  "name": "Галактика СССР Terminal",
+  "description": "Эмулятор ОС сотрудника секретного архива корпорации «Галактика СССР»",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
