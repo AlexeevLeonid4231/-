@@ -21,13 +21,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: true
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
-      - name: Deploy to docs/ on main (for Pages source main + /docs)
+      - name: Publish built site to docs/ on main
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
