@@ -25,8 +25,11 @@ Site: https://alexeevleonid4231.github.io/-/
 
 After push, GitHub Actions builds the app and publishes to the `gh-pages` branch.
 
-**Settings → Pages → Build and deployment:**
-- Source: **Deploy from a branch**
-- Branch: **gh-pages** / **/(root)**
+**Settings → Pages → Build and deployment → Deploy from a branch** (choose one):
 
-Do not use `main` as the Pages branch — it serves unbuilt source files.
+| Branch | Folder |
+|--------|--------|
+| `gh-pages` | `/ (root)` |
+| `main` | `/docs` |
+
+**Important:** do **not** use `main` + `/ (root)` — that publishes raw source and shows a blank page.
